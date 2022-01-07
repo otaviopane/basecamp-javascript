@@ -14,10 +14,16 @@
 </body>
 <script>
     var todo_list = []
+    
     function save() {
         var new_todo = window.document.querySelector('input#todo_name')
         todo_list.push(new_todo)
-        listing.innerHTML = todo_list
     }
+
+
+
+    todo_list.forEach(element => {
+        console.log(element)
+    });
 </script>
 </html>
