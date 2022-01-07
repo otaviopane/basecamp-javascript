@@ -88,18 +88,25 @@ function calculator() {
       }
     }
 
-    if (operation == 1) {
-      addition();
-    } else if (operation == 2) {
-      subtraction();
-    } else if (operation == 3) {
-      multiplication();
-    } else if (operation == 4) {
-      division();
-    } else if (operation == 5) {
-      integerDivision();
-    } else if (operation == 6) {
-      potentiation();
+    switch (operation) {
+      case 1:
+        addition();
+        break;
+      case 2:
+        subtraction();
+        break;
+      case 3:
+        multiplication();
+        break;
+      case 4:
+        division();
+        break;
+      case 5:
+        integerDivision();
+        break;
+      case 6:
+        potentiation();
+        break;
     }
   }
 }
