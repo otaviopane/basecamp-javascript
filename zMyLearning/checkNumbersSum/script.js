@@ -1,7 +1,7 @@
-function check(n1, n2) {
+function check() {
   alert("Checking Numbers!");
-  n1 = Number(prompt("Type the first number: "));
-  n2 = Number(prompt("Type the second number: "));
+  let n1 = Number(prompt("Type the first number: "));
+  let n2 = Number(prompt("Type the second number: "));
 
   itsEqual();
   sumBetween10and20();
