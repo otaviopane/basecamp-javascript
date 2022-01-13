@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,600;1,200&display=swap");
+
+:root {
+  --white: #ffffff;
+  --red: #f30000;
+  --dark-grey: #484848;
+  --light-grey: #eeeeee;
+}
+
+/* ----- Base elements ----- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-grey);
+  color: var(--white);
+  font-family: "Mulish", sans-serif;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background-color: var(--red);
+  color: #ffffff;
+}
+
+header .logo {
+  margin-left: 15px;
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--light-grey);
+  margin-right: 15px;
+}
+
+header nav a:hover {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 105%;
+}
+
+/* ----- Featured game ----- */
+
+.featured-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 16px;
+  height: 500px;
+}
+
+.featured-game-img {
+  background: url("/img/poster_mario_mart_8.jpeg");
+  background-size: cover;
+}
+
+.featured-game-title {
+  font-size: 50px;
+}
+
+.featured-game-subtitle {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.featured-game-description {
+  margin: 50px;
+}
