@@ -49,39 +49,56 @@ header nav a:hover {
   font-size: 105%;
 }
 
+.fas {
+  color: var(--white);
+  margin: 0px 10px 0px 0px;
+}
+
 /* ----- Featured game ----- */
 
 .featured-game {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   font-size: 16px;
   height: 500px;
 }
 
+.featured-game .container {
+  width: 40vw;
+  height: 100%;
+  margin: 5% 5% 2% 5%;
+}
+
 .featured-game-img {
-  background: url("/img/poster_mario_mart_8.jpeg");
-  background-size: cover;
+  display: flex;
+  width: 60vw;
+  height: 100%;
+  align-items: flex-end;
+}
+.featured-game-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .featured-game-title {
   font-size: 50px;
-  margin: 5% 5% 2% 5%;
 }
 
 .featured-game-subtitle {
+  margin-top: 2%;
   font-size: 20px;
-  margin: 0% 5% 2% 5%;
 }
 
 .featured-game-description {
-  margin: 0% 5% 2% 5%;
+  margin-top: 2%;
 }
 
 .buttons {
   justify-content: center;
-  margin: 0% 5% 5% 5%;
+  margin-top: 2%;
 }
 
 .button {
@@ -102,7 +119,28 @@ header nav a:hover {
   cursor: pointer;
 }
 
-.fas {
-  color: var(--white);
-  margin: 0px 10px 0px 0px;
+.items-wrapper {
+  width: 100vw;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overflow: scroll;
+}
+.item {
+  flex: none;
+  width: 13%;
+  height: 250px;
+  scroll-snap-align: center;
+}
+
+.item img {
+  flex: none;
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+  margin: 0 0.25vw 0 0.25vw;
 }
