@@ -125,9 +125,9 @@ header nav a:hover {
 
 .items {
   display: flex;
-  justify-content: center;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   overflow: scroll;
 }
 .item {
@@ -135,6 +135,7 @@ header nav a:hover {
   width: 13%;
   height: 250px;
   scroll-snap-align: center;
+  pointer-events: none;
 }
 
 .item img {
